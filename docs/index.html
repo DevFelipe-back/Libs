@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AAAA</title>
+    <script>
+        function myFunction(){
+            let downloader = document.getElementById("downloader");
+            downloader.href = ".\\colibri-common.js";
+            downloader.download = "TestandoEle.js";
+            downloader.click();
+        }
+    </script>
 </head>
-<body>
-    
+<body onload="myFunction()">
+    <a id="downloader" href="" style="display: none;"></a>
 </body>
 </html>
